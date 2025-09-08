@@ -39,12 +39,15 @@ public class TelaMenu extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Menu Principal - Gerenciador de Clientes");
 
+        btnGerenciarClientes.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         btnGerenciarClientes.setText("Gerenciar Clientes");
         btnGerenciarClientes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnGerenciarClientesActionPerformed(evt);
             }
         });
+
+        jMenuBar1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
 
         jMenu1.setText("Arquivo");
         jMenuBar1.add(jMenu1);
@@ -72,9 +75,9 @@ public class TelaMenu extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(132, 132, 132)
-                .addComponent(btnGerenciarClientes, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(130, Short.MAX_VALUE))
+                .addGap(111, 111, 111)
+                .addComponent(btnGerenciarClientes)
+                .addContainerGap(125, Short.MAX_VALUE))
         );
 
         pack();
